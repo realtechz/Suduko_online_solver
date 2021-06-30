@@ -5,7 +5,6 @@ import numpy as np
 import time
 
 global driver
-
 opt = Options()
 opt.add_argument("--disable-infobars")
 opt.add_argument("start-maximized")
@@ -25,7 +24,6 @@ row = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 URL = "https://www.soduko-online.com/"
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=opt, service_log_path='Nul')
 driver.get(URL)
-
 
 def possible(y, x, n):
     for i in range(0, 9):
